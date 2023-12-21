@@ -72,7 +72,7 @@ const Register = () => {
         timer: 1500,
       });
 
-      navigate('/');
+      navigate('/dashbord');
      
     } catch (error) {
         // Handle errors
@@ -89,7 +89,7 @@ const Register = () => {
             <div className=" bg-pink-50">
         <div className="hero-content flex">
           <div className="flex-1">
-            <img src="https://i.ibb.co/HKLcWKz/animated-teaser.gif" alt="" />
+            <img src="https://i.ibb.co/gzDpPLn/E9-Tta-Yg-KZu.gif" alt="" />
           </div>
           <div className="flex-1 shadow-2xl bg-green-50">
             <form onSubmit={handleRegister} className="card-body">
@@ -103,7 +103,7 @@ const Register = () => {
                 <label className="label">
                   <span className="label-text">Photo</span>
                 </label>
-                <input type="file" placeholder="upload a image" name="photo" className="input input-bordered" required />
+                <input  type="file" placeholder="upload a image" name="photo" className="input pt-2 input-bordered" required />
               </div>
 
               <div className="form-control">
