@@ -5,6 +5,7 @@ import useAxiospublic from "../hooks/useAxiosPublic";
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import { updateProfile } from 'firebase/auth';
 import Swal from "sweetalert2";
+import SocialLogin from "../social/SocialLogin";
 
 
 
@@ -72,7 +73,7 @@ const Register = () => {
         timer: 1500,
       });
 
-      navigate('/dashbord');
+      navigate('/dashbord/wellcome');
      
     } catch (error) {
         // Handle errors
@@ -92,6 +93,7 @@ const Register = () => {
             <img src="https://i.ibb.co/gzDpPLn/E9-Tta-Yg-KZu.gif" alt="" />
           </div>
           <div className="flex-1 shadow-2xl bg-green-50">
+            <SocialLogin></SocialLogin>
             <form onSubmit={handleRegister} className="card-body">
               <div className="form-control">
                 <label className="label">

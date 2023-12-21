@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { AuthContext } from "../auth/AuthProvider";
+import SocialLogin from "../social/SocialLogin";
 
 const Login = () => {
   const location = useLocation();
@@ -26,7 +27,7 @@ const Login = () => {
         text: "you are login successfull",
         icon: "success"
       });
-        navigate(location?.state ? location.state: "/dashbord")
+        navigate(location?.state ? location.state: "/dashbord/wellcome")
        })
        .catch(error=>{
         console.error(error)
@@ -45,6 +46,7 @@ const Login = () => {
     </div>
     <div className=" flex-1 shadow-2xl bg-base-100">
       <form onSubmit={handleLogin} className="card-body">
+        <SocialLogin></SocialLogin>
         <div className="form-control">
           <label className="label">
             <span className="label-text">Email</span>

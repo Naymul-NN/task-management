@@ -34,7 +34,7 @@ const Navbar = () => {
                             <li className="hover:bg-pink-500 px-4 py-2 rounded-md"><Link to="/">Home</Link></li>
                             <li className="hover:bg-pink-500 px-4 py-2 rounded-md mx-7"><Link to="/about">About</Link></li>
                             {
-                                user && <li className="hover:bg-pink-500 px-4 py-2 rounded-md"><Link to="/dashbord">Dashboard</Link></li>
+                                user && <li className="hover:bg-pink-500 px-4 py-2 rounded-md"><Link to="/dashbord/wellcome">Dashboard</Link></li>
                             }
                         </ul>
                     </div>
@@ -45,7 +45,7 @@ const Navbar = () => {
                         <li className="hover:bg-pink-500 px-4 py-2 rounded-md"><Link to="/">Home</Link></li>
                         <li className=" hover:bg-pink-500 px-4 py-2 mx-7 rounded-md active:bg-red-400 "><Link to="/about">About</Link></li>
                         {
-                                user && <li className="hover:bg-pink-500 px-4 py-2 rounded-md"><Link to="/dashbord">Dashboard</Link></li>
+                                user && <li className="hover:bg-pink-500 px-4 py-2 rounded-md"><Link to="/dashbord/wellcome">Dashboard</Link></li>
                         }
                     </ul>
                 </div>

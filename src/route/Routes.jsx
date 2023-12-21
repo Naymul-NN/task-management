@@ -4,6 +4,10 @@ import Home from "../home/Home";
 import Register from "../signup/Register";
 import Login from "../login/Login";
 import Dashbord from "../layout/Dashboard";
+import UserHome from "../listarea/UserHome";
+import Addnew from "../listarea/Addnew";
+import ManageTask from "../listarea/ManageTask";
+import Wellcome from "../listarea/Welcome";
 
 const router = createBrowserRouter([
     {
@@ -26,7 +30,25 @@ const router = createBrowserRouter([
     },
     {
       path: "dashbord",
-      element: <Dashbord></Dashbord>  
+      element: <Dashbord></Dashbord> , 
+      children:[
+        {
+          path: 'wellcome',
+          element: <Wellcome></Wellcome>
+        },
+        {
+            path:"userHome",
+            element:<UserHome></UserHome>
+        },
+        {
+          path:"addtodo",
+          element:<Addnew></Addnew>
+        },
+        {
+          path:"managetask",
+          element:<ManageTask></ManageTask>
+        }
+      ]
     }
   ]);
 
