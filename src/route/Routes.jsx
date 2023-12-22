@@ -8,6 +8,7 @@ import UserHome from "../listarea/UserHome";
 import Addnew from "../listarea/Addnew";
 import ManageTask from "../listarea/ManageTask";
 import Wellcome from "../listarea/Welcome";
+import About from "../home/About";
 
 const router = createBrowserRouter([
     {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
             path:"/",
             element:<Home></Home>
         },  
+        {
+          path:"/about",
+          element:<About></About>
+        },
         {
           path:"/register",
           element:<Register></Register>

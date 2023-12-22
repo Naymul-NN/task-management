@@ -175,7 +175,7 @@ const handledone = (item) => {
                 <th>Task photo</th>
                 <th>priority</th>
                 <th>Deadline</th>
-                <th>action</th>
+                
                 
               </tr>
             </thead>
@@ -191,7 +191,7 @@ const handledone = (item) => {
                           </td>
                           <td>{item.priority}</td>
                           <td>{item.deadline}</td>
-                          <td><button className="btn btn-sm"><FaRegEdit /></button><button onClick={()=> handledelete(item._id)} className="btn btn-sm"><MdDeleteForever /></button></td>
+                          
                         </tr>
                   ))}
                 </tbody>
