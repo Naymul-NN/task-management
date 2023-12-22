@@ -26,7 +26,7 @@ const SocialLogin = () => {
                 timer: 1500,
               });
         
-              navigate('/dashbord');
+              navigate('/dashbord/wellcome');
     }
 
     return (

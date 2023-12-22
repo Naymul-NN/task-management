@@ -1,8 +1,12 @@
+import { useContext } from "react";
+import { AuthContext } from "../auth/AuthProvider";
 
 const UserHome = () => {
+    const {user} = useContext(AuthContext)
     return (
         <div>
-            <h1>see user home</h1>
+            <img src={user?.photoURL} alt="" />
+                <h1>{user?.displayName}</h1>
         </div>
     );
 };

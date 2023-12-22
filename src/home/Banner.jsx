@@ -14,7 +14,7 @@ const Banner = () => {
                     <div className=' space-y-5 pt-40'>
                         <h1 className='text-5xl text-pink-300 font-bold '> Manage your time with  <br /> <span className=" text-orange-500">your own way</span> </h1>             
                         {
-                            user ? <Link to="/dashbord"> 
+                            user ? <Link to="/dashbord/wellcome"> 
                             <button className='btn btn-secondary hover:bg-orange-500 text-2xl mt-5 border rounded-lg text-white'>Let&apos;s Explore</button>
                            </Link> : <Link to="/login"> 
                          <button className='btn btn-secondary hover:bg-orange-500 text-2xl mt-5 border rounded-lg text-white'>Let&apos;s Explore</button>
